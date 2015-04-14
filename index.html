@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- plugins -->
+    <!-- image slider from: http://jacksbox.de/stuff/ -->
+    <link rel="stylesheet" href="css/vendor/fractionSlider/fractionslider.css">
 
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -39,47 +41,102 @@
         </nav>
     </header>
 
-    <main id="content" class="clearfix yellowish-bg">
-        <div id="text-examples" class="panel yellowish-bg">
-            <div class="panel almost-white-bg thin-border">
-                <h1>Here is a Header Example</h1>
-                <h2>This is a Sub Head Example</h2>
-                <p><strong>Paragraph Text</strong></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin ex ut dui elementum finibus. Mauris suscipit turpis enim, ac pharetra dolor accumsan at. Etiam facilisis egestas nunc, a aliquam diam dignissim a. Vestibulum non scelerisque erat. Donec pulvinar hendrerit nulla, malesuada finibus justo porttitor nec. Mauris quis sem eget mi sodales ornare. Integer sem est, faucibus ultrices porta non, aliquet quis nisi. Phasellus efficitur metus ut justo interdum aliquet eget at purus. Praesent lobortis venenatis posuere. In feugiat et est at tempus. In nec enim enim.</p>
-                <p><strong>Text Links</strong></p>
-                <p>Here is an <a href="#">example text link</a></p>
-                <p>Note: Link and visited are <strong><span class="dark-red">this color</span></strong>; whereas hover and active are <strong><span class="dk-green">this color.</span></strong></p>
-                <p><strong>Adjectives</strong></p>
-                <p>gourmet, flavorful, funky, variety, futuristic, fun</p>
-            </div> 
-        </div> <!-- end text-examples -->
+    <main id="content" class="clearfix content-bg">
+        <article id="specials">
+            <header>
+                <h1>today's features</h1>
+            </header>
+            <div class="slider-wrapper">
+                <div class="responisve-container">
+                    <!-- <div class="fs_loader"></div> -->
+                    <div class="slider"><!-- your slider container -->
+                        <div class="slide">
+                            <img src="img/fruit-pizza-2.jpg" 
+                                alt="fruit pizza"
+                                width="460" height="400"
+                                data-in="left" data-out="left">
+                            <p  class="claim slider-colors1"           
+                                data-position="30,10" data-in="top" data-step="1" data-out="top" 
+                                data-ease-in="easeOutBounce">
+                                Cosmic Fruity Pizza</p>
+                            <p  class="teaser slider-colors2"   
+                                data-position="90,10" data-in="left" data-step="2" data-delay="500">
+                                out of this world</p>
+                            <p  class="teaser slider-colors3"    
+                                data-position="90,10" data-in="left" data-step="2" data-special="cycle" data-delay="3000">
+                                try a different slice of fruit</p>
+                            <p  class="teaser slider-colors4"        
+                                data-position="90,10" data-in="left" data-step="2" data-special="cycle" data-delay="5500" data-out="none">
+                                limited time</p>
+                        </div>
+                        <div class="slide">
+                            <img src="img/fritosPizza2.jpg"
+                                alt="fritos pizza"
+                                width="460" height="400"
+                                data-in="left" data-out="left">
+                            <p  class="claim slider-colors5"
+                                data-position="30,10" data-in="top" data-step="1" 
+                                data-out="top">
+                                New! Meteorite Pizza</p>
+                            <p  class="teaser slider-colors1"  
+                                data-position="90,10" data-in="bottom" data-step="2" data-delay="500">
+                                whole wheat crust</p>
+                            <p  class="teaser slider-colors2"  
+                                data-position="125,10" data-in="bottom" data-step="2" data-delay="1500">
+                                ricotta cheese</p>
+                            <p  class="teaser slider-colors1"  
+                                data-position="160,10" data-in="bottom" data-step="2" data-delay="2500">
+                                salsa sauce</p>
+                            <p  class="teaser slider-colors2"  
+                                data-position="195,10" data-in="bottom" data-step="2" data-delay="3500">
+                                pepperoni and sausage</p>
+                            <p  class="teaser slider-colors1"  
+                                data-position="230,10" data-in="bottom" data-step="2" data-delay="4500">
+                                crispy fritos</p>
+                        </div>
+                        <div class="slide">
+                            <img src="img/halfBaked.jpg" 
+                                alt="half baked pizza"
+                                width="460" height="400"
+                                data-in="left" data-out="left">
+                            <p  class="claim slider-colors1"           
+                                data-position="30,10" data-in="top" data-step="1" data-out="top" 
+                                data-ease-in="easeOutBounce">
+                                Take &amp; Bake Tuesday</p>
+                            <p  class="teaser slider-colors2"   
+                                data-position="90,10" data-in="left" data-step="2" data-delay="500">
+                                Half Price</p>
+                            <p  class="teaser slider-colors3"    
+                                data-position="90,10" data-in="left" data-step="2" data-special="cycle" data-delay="3000">
+                                Order online</p>
+                            <p  class="teaser slider-colors4"        
+                                data-position="90,10" data-in="left" data-step="2" data-special="cycle" data-delay="5500" data-out="none">
+                                Ready when you get here</p>
+                        </div>
+                        <div class="slide">
+                            <img src="img/milkyWayPizza.jpg" 
+                                alt="milky way pizza"
+                                width="460" height="400"
+                                data-in="left" data-out="left">
+                            <p  class="claim slider-colors6"
+                                data-position="30,10" data-in="top" data-step="1" data-out="top">
+                                Milky Way Pizza</p>
+                            <p  class="teaser slider-colors7"  
+                                data-position="90,10" data-in="bottom" data-step="2" data-delay="500">
+                                New frozen dessert</p>
+                            <p  class="teaser slider-colors7"  
+                                data-position="90,10" data-in="bottom" data-step="2" data-special="cycle" data-delay="1500">
+                                Gooey goodness</p>
+                            <p  class="teaser slider-colors7"  
+                                data-position="90,10" data-in="bottom" data-step="2" data-special="cycle" data-delay="3000">
+                                Try it today!</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
         
-        <div id="graphic-examples">
-            <div class="panel yellowish-bg">
-                <p><strong>Possible Colors</strong></p>
-                <span class="swatch dark-red-bg">8E0A0A</span>
-                <span class="swatch orangey-bg">C73924</span>
-                <span class="swatch yellowish-bg">E08745</span>
-                <span class="swatch dk-green-bg ">32402D</span>
-                <span class="swatch greyish-bg">BDCCD4</span>
-                <p><strong>Possible Patterns and Images</strong></p>
-                <span class="iswatch"><img src="img/flyingSaucer.png" alt="flying saucer"></span>
-                <span class="iswatch"><img src="img/star-bg.png" alt="black sky with stars"></span>
-                <span class="iswatch"><img src="img/moon.png" alt="red full moon"></span>
-            </div>
-            <div class="panel-no-padding almost-white-bg thin-border">
-                <p>&nbsp;</p>
-                <div class="inline extra-margin-bottom extra-margin-left">
-                    <a href="#" class="btn">button</a>
-                    <p class="caption">Normal</p>
-                </div>
-                <div class="inline extra-margin-bottom extra-margin-left">
-                    <a href="#" class="btn btn-green">button</a>
-                    <p class="caption">Active, Hover</p>
-                </div>
-            </div>
-            <p>&nbsp;</p>
-        </div>  <!-- end graphic-examples -->
     </main>
 
     <footer class="clearfix">
@@ -105,6 +162,9 @@
     <!-- Use these two lines when deploying -->
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.3.min.js"><\/script>')</script> -->
+
+    <!-- image slider plugin -->
+    <script src="js/vendor/fractionSlider/jquery.fractionslider.js"></script>
 
     <!-- page specific JavaScript -->
     <script src="js/home.js"></script>
