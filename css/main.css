@@ -79,6 +79,20 @@ body {
     color: #4F423B;
 }
 
+h4 {
+    margin: 1rem 0 .5rem 0;
+    color: #8E0A0A;
+}
+
+article, aside {
+    vertical-align: top;
+    margin: 10px;
+}
+
+section {
+    margin-top: 20px;
+}
+
 .container {
     width: 95%;
     margin: 0px auto;
@@ -92,8 +106,16 @@ body {
     clear: both;
 }
 
+.clear {
+    clear: both;
+}
+
 .inline {
     display: inline-block;
+}
+
+.inline-only {
+    display: inline;
 }
 
 .extra-margin-bottom {
@@ -257,8 +279,11 @@ main {
 }
 
 .panel {
-    padding: 20px;
-    /* border: 1rem solid #E08745;  */
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: solid #8E0A0A 4px;
 }
 
 .panel-no-padding {
@@ -289,6 +314,48 @@ main {
 .iswatch img {
     width: 4.5rem;
     height: 4.5rem;
+}
+
+/* promotions */
+.promo {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.promo-desc {
+    display: inline-block;
+}
+
+.promo img {
+    display: inline-block;
+
+}
+
+.promo p {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.promo-title {
+    font-weight: bold;
+    text-align: center;
+    margin: 4px auto;
+}
+
+.promo-info {
+    text-align: left;
+    margin: 4px auto;
+}
+
+.promo-dow::after {
+    content: ": ";
+}
+
+.promo-time::after {
+    content: ".";
 }
 
 /**========================================================
@@ -461,6 +528,17 @@ footer a:hover, footer a:active {
     #logo img {
         width: auto;
     }
+
+    .promo {
+        text-align: left;
+    }
+
+    .promo-desc {
+        vertical-align: top;
+        width: 70%;
+        height: 80px;
+        margin-bottom: 20px;
+    }
 }
 
 /* Above 800px wide: 
@@ -468,6 +546,15 @@ footer a:hover, footer a:active {
    (2) shift some footer information to the left
 */
 @media (min-width: 800px) {
+    article {
+        float: left;
+        width: 47%;
+    }
+    aside {
+        float: right;
+        width: 47%;
+    }
+
     #text-examples {
         float: right;
         width: 61%;
@@ -478,15 +565,44 @@ footer a:hover, footer a:active {
         width: 33%;
     }
 
-    #version-info {
-        position: relative;
-        top: -3.1rem;
-        text-align: left;
+    .btn {
+        font-size: 1.15rem;
     }
 
-    #version-info p {
-        text-align: left;
-        padding-left: 1rem;
+    #promotions {
+        margin-top: 47px;
+    }
+
+    .promo {
+        text-align: center;
+        width: calc(100%/3.3);
+    }
+
+    .promo-desc {
+        vertical-align: top;
+        width: auto;
+        height: auto;
+    }
+
+    .promo-dow, .promo-time {
+        text-align: center;
+        display: block;
+    }
+
+    .promo-msg {
+        display: inline-block;
+    }
+
+    .promo-time {
+        margin-bottom: 1rem;
+    }
+
+    .promo-dow::after {
+        content: '';
+    }
+
+    .promo-time::after {
+        content: '';
     }
 }
 
@@ -557,10 +673,6 @@ footer a:hover, footer a:active {
         font-size: 1em;
     }
 
-    body {
-        font-size: 1em;
-    }
-
     nav {
         position: absolute;
         top: 85px;
@@ -590,5 +702,14 @@ footer a:hover, footer a:active {
         margin-top: 0;
         padding-top: 5px;
         padding-bottom: 5px;
+    }
+
+    article {
+        float: left;
+        width: 47%;
+    }
+    aside {
+        float: right;
+        width: 49%;
     }
 }
