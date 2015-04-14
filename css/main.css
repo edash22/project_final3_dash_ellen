@@ -130,6 +130,13 @@ section {
     border: 1px solid #222;
 }
 
+.theme-border {
+    border: 2px solid #8E0A0A;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
 /**========================================================
     3 - TYPE
 ========================================================**/
@@ -439,7 +446,51 @@ main {
 }
 
 /* where */
+.location img {
+    width: 50%;
+}
 
+#location-map {
+    width: 95%;
+    text-align: center;
+}
+
+#location-map img {
+    width: 90%;
+}
+
+#location-map h2 {
+    margin-top: 10px;
+}
+
+.location a:hover {
+    cursor: pointer; 
+}
+
+.location a, .location a:focus, .location a:visited {
+    color: #8E0A0A;
+}
+
+/* Flexible iFrame */
+/* from: https://niklausgerber.com/blog/responsive-google-or-bing-maps/  */
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,  
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 /**========================================================
@@ -623,6 +674,10 @@ footer a:hover, footer a:active {
         height: 80px;
         margin-bottom: 20px;
     }
+
+    .location figcaption {
+        font-size: 1rem;
+    }
 }
 
 /* Above 768px wide: 
@@ -647,6 +702,10 @@ footer a:hover, footer a:active {
 
     .menu-column-right .menu-item {
         padding-left: 20px;
+    }
+
+    .location img {
+        width: 75%;
     }
 }
 
@@ -713,6 +772,10 @@ footer a:hover, footer a:active {
     .promo-time::after {
         content: '';
     }
+
+    .location figcaption {
+        font-size: 1.1rem;
+    }
 }
 
 /* Above 950px wide: 
@@ -748,6 +811,10 @@ footer a:hover, footer a:active {
     aside {
         float: right;
         width: 48%;
+    }
+
+    .location img {
+        width: 100%;
     }
 }
 
