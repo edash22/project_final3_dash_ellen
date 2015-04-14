@@ -1,0 +1,334 @@
+/**========================================================
+    RESPONSIVE CSS
+
+    Created: April 18, 2015
+
+    Browsers supported: IE8+, Chrome35+, Firefox34+
+
+    Known limitations:
+    - none (yet)
+
+    CONTENTS
+        1 - COLORS
+        2 - GENERAL 
+        3 - TYPE
+        4 - HEADER
+        5 - CONTENT
+        6 - BUTTON
+        7 - FOOTER
+        8 - MEDIA QUERIES
+
+========================================================**/
+
+/**========================================================
+    1 - COLORS 
+========================================================**/
+
+.dark-red-bg {
+    background-color: #8E0A0A;
+}
+
+.orangey-bg {
+    background-color: #C73924;
+}
+
+.yellowish-bg {
+    background-color: #E08745;
+}
+
+.dk-green-bg {
+    background-color: #32402D;
+}
+
+.greyish-bg {
+    background-color: #4F423B;
+}
+
+.almost-white-bg {
+    background-color: #eee;
+}
+
+.dark-red {
+    color: #8E0A0A;
+}
+
+.dk-green {
+    color: #32402D;
+}
+
+/**========================================================
+    2 - GENERAL 
+========================================================**/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000 url(../img/skynebula01.png) repeat;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, Calibri, sans-serif;
+    font-size: .9em;
+    color: #4F423B;
+}
+
+.container {
+    width: 95%;
+    margin: 0px auto;
+}
+
+/* clearfix from: http://css-tricks.com/snippets/css/clear-fix/ 
+   Good for IE8 and above */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.extra-margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.extra-margin-left {
+    margin-left: 1rem;
+}
+
+.thin-border {
+    border: 1px solid #222;
+}
+
+/**========================================================
+    3 - TYPE
+========================================================**/
+
+@font-face {
+  font-family: 'SpinCycle';
+  src: url('../font/SPINC___.TTF')  format('truetype');
+}
+
+h1 {
+    font-weight: normal;
+    font-family: 'SpinCycle', Geneva, Tahoma, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #222222;
+    margin: .8rem 0;
+}
+
+h2 {
+    font-family: 'Comfortaa', CenturyGothic, AppleGothic, Calibri, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: .65rem 0;
+}
+
+p {
+    margin-top: .5rem;
+    line-height: 150%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:link, a:visited {
+    color: #8E0A0A;
+}
+
+a:hover, a:active {
+    color: #32402D;
+}
+
+.caption {
+    font-size: .8rem;
+    text-align: center;
+}
+
+/**========================================================
+    4 - HEADER
+========================================================**/
+
+#header {
+    margin: 0 auto;
+    padding: 1rem 0 0 0;
+}
+
+/* Logo */
+
+#logo {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/**========================================================
+    5 - CONTENT
+========================================================**/
+
+/* Main - HTML5 fix for IE8 */
+main {
+    display: block;
+}
+
+#content {
+    width: 95%; 
+    max-width: 1200px;
+    margin: auto;
+}
+
+.panel {
+    padding: 20px;
+    /* border: 1rem solid #E08745;  */
+}
+
+.panel-no-padding {
+    padding: 0;
+    margin: 0 20px;
+    /* border: 1rem solid #E08745;  */
+}
+
+.swatch, .iswatch {
+    display: inline-block;
+    margin-right: .75rem;
+    margin-bottom: .75rem;
+    border: 1px solid #222;
+    color: black;
+    text-align: center;
+}
+
+.swatch {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.iswatch {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.iswatch img {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+/**========================================================
+    6 - BUTTON
+========================================================**/
+
+/* generated with http://css3buttongenerator.com */
+
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: 'SpinCycle', Geneva, Tahoma, Verdana, sans-serif;
+    font-size: 1.3rem;
+    color: #e08745 !important;
+    background: #8e0a0a;
+    padding: 7px 25px 0px 25px;
+    border: solid #e08845 4px;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.btn-green {
+    background: #32402D;
+}
+
+.btn:hover, .btn:active {
+    background: #32402d;
+    text-decoration: none;
+}
+
+/**========================================================
+    7 - FOOTER
+========================================================**/
+
+footer {
+    margin: auto;
+    width: 95%; 
+    max-width: 1200px;
+    color: black;
+}
+
+#footer-logo {
+    margin: 0;
+    text-align: center;
+    padding-top: 1rem;
+    color: black;
+}
+
+/**========================================================
+    8 - MEDIA QUERIES
+========================================================**/
+
+/* Above 800px wide: 
+   (1) two columns (33/66) for the main content 
+   (2) shift some footer information to the left
+*/
+@media (min-width: 800px) {
+    #text-examples {
+        float: right;
+        width: 61%;
+    }
+
+    #graphic-examples {
+        float: left;
+        width: 33%;
+    }
+
+    #version-info {
+        position: relative;
+        top: -3.1rem;
+        text-align: left;
+    }
+
+    #version-info p {
+        text-align: left;
+        padding-left: 1rem;
+    }
+}
+
+/* Above 1100px wide: 
+   (1) two equal columns for the main content 
+   (2) larger image examples
+   (3) larger body, h1 & h2
+*/
+@media (min-width: 1100px) {
+    #text-examples {
+        float: right;
+        width: 48%;
+    }
+
+    #graphic-examples {
+        float: left;
+        width: 48%;
+    }
+
+    .iswatch {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .iswatch img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    body {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: .75rem 0;
+    }
+}
