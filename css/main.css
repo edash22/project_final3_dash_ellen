@@ -464,7 +464,7 @@ main {
 }
 
 .location a:hover {
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .location a, .location a:focus, .location a:visited {
