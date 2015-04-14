@@ -358,6 +358,58 @@ main {
     content: ".";
 }
 
+/* menu */
+
+#menu {
+    width: 100%;
+}
+
+#menu-gallery {
+    vertical-align: top;
+    text-align: center;
+}
+
+.menu-category {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu-category a {
+    outline: none;
+}
+
+.menu-category img {
+    margin:0px; 
+    padding:2px; 
+    /* - alternative style
+    background:#8E0A0A; 
+    box-shadow:0 0 5px rgba(0,0,0,.35);
+    */
+}
+
+.menu-category figcaption {
+    margin:0; 
+    padding:10px 0px;
+    background:rgba(0,0,0,.45); 
+    color: white;
+    position: relative;
+    font-weight: normal;
+    top: -120px;
+}
+
+.menu-popup {
+    position: relative;
+    background: #ddd;
+    padding: 20px;
+    width: auto;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.hide-caption {
+    left: -2000px;
+}
+
 /**========================================================
     6 - BUTTON
 ========================================================**/
