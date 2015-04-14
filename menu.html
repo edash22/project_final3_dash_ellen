@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     
     <!-- plugins -->
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="css/vendor/magnific-popup.css">
 
     <link rel="stylesheet" href="css/main.css">
 
@@ -56,8 +58,10 @@
              -->
             <div id="menu-gallery">
                 <figure class="menu-category">
-                    <img src="img/garlicKnots200-2.png" alt="Appetizers">
-                    <figcaption class="hide-caption">Starters</figcaption>
+                    <a href="#menu-bites" class="open-popup-link">
+                        <img src="img/garlicKnots200-2.png" alt="Appetizers">
+                        <figcaption class="hide-caption">Starters</figcaption>
+                    </a>
                 </figure>
                 <figure class="menu-category">
                     <img src="img/salad-topview.png" alt="Salads">
@@ -91,6 +95,65 @@
         </article>
     </main>
 
+    <div id="menu-bites" class="menu-popup mfp-hide">
+        <div class="menu-items-wrapper">
+            <div class="description">
+                <h1>Starters</h1>
+                <p>Start your meal with one of our tasty appetizers. Unique flavors that are out of this world!</p>
+            </div>
+            <div class="menu-section">
+                <div class="menu-column menu-column-left">
+                    <div class="menu-item">
+                        <h4>Garlic Knots</h4>
+                        <p>The best you'll ever have! Served with a side of marinara.</p>
+                        <p>$5.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Bruschetta</h4>
+                        <p>Diced tomatoes, basil and seasonings tossed in balsamic vinegar. Simply yummy!</p>
+                        <p>$5.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Spinach Dip</h4>
+                        <p>Fresh sautéed spinach blended with artichokes, mozzarella and Parmesan cheeses in a creamy sauce topped with shaved Parmesan and baked until it’s warm and bubbly.</p>
+                        <p>$6.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Meatball Trio</h4>
+                        <p>Three meatballs grilled with fresh mozzarella on a bed of red sauce with shaved Parmesan cheese and basil.</p>
+                        <p>$6.00</p>
+                    </div>
+                </div>
+                <div class="menu-column menu-column-right">
+                    <div class="menu-item">
+                        <h4>The Capri</h4>
+                        <p>Vine-ripened tomatoes, fresh mozzarella and basil drizzled with a balsamic glaze. Served with a side of spring mix tossed with an herb vinaigrette dressing.</p>
+                        <p>$6.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Mozzarella Marinara</h4>
+                        <p>Breaded mozzarella with a side of marinara sauce. </p>
+                        <p>$5.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Fried Calamari</h4>
+                        <p>Lightly battered calamari made with fresh herbs, flash fried and served with marinara sauce.</p>
+                        <p>$8.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Stuffed Mushrooms</h4>
+                        <p>Baby portabellos stuffed with bacon, spinach, and parmesan cheeses. Broiled until bubbly.</p>
+                        <p>$5.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fun-fact">
+                <p>"Live long and prosper"</p>
+                <p>- Spock</p>
+            </div>            
+        </div>
+    </div>
+
 
     <footer class="clearfix">
         <div class="footer-motto">
@@ -116,6 +179,8 @@
     <!-- Use these two lines when deploying -->
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.3.min.js"><\/script>')</script> -->
+
+    <script src="js/vendor/jquery.magnific-popup.js"></script>
 
     <!-- page specific JavaScript -->
     <script src="js/menu.js"></script>

@@ -4,6 +4,11 @@
 // This is called from main.js (document ready)
 // Should contain any page unique functionality 
 function pageDocReady () {
+  $('.open-popup-link').magnificPopup({
+    type:'inline',
+    midClick: true
+  });
+
    setupMenuHover();
 }
 

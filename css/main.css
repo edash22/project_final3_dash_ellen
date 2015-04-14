@@ -410,6 +410,34 @@ main {
     left: -2000px;
 }
 
+.menu-items-wrapper .description {
+    text-align: center;
+}
+
+.menu-popup {
+    background: #ddd url(../img/simple-gray-texture.jpg) repeat;
+}
+
+.menu-item p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.description h1 {
+    color: #32402D;
+}
+
+.fun-fact {
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 2px solid #8E0A0A;
+    background: rgba(224, 135, 69, 0.6);
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+}
+
 /**========================================================
     6 - BUTTON
 ========================================================**/
@@ -590,6 +618,31 @@ footer a:hover, footer a:active {
         width: 70%;
         height: 80px;
         margin-bottom: 20px;
+    }
+}
+
+/* Above 768px wide: 
+   (1) two columns for menu
+*/
+@media (min-width: 768px) {
+    .menu-column-left {
+        width: 46%;
+        display: inline-block;
+        text-align: right;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+
+    .menu-column-right {
+        width: 50%;
+        display: inline-block;
+        text-align: left;
+        border-left: 1px solid #4F423B;
+        vertical-align: top;
+    }
+
+    .menu-column-right .menu-item {
+        padding-left: 20px;
     }
 }
 
