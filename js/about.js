@@ -18,8 +18,17 @@ function setupAboutClick () {
     $(aboutItems[i]).click(function (item) {
       var chosen = $(item.currentTarget).find('img');
       var altText = $(chosen).attr('alt');
+
       $('#about-name').text(altText);
-      // TODO - update image
+      // hide the current section & show the selected section
+
+      var hideThis = $('.current');
+      var showThis = $('#about-' + altText.toLowerCase());
+      hideThis.removeClass('current');
+      showThis.addClass('current');
+
+      $(hideThis).hide(400);
+      $(showThis).show(400);
 
     });
 

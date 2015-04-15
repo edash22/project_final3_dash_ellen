@@ -118,6 +118,10 @@ section {
     display: inline;
 }
 
+.hide {
+    display: none;
+}
+
 .extra-margin-bottom {
     margin-bottom: 1rem;
 }
@@ -458,11 +462,20 @@ main {
 }
 
 #about-details img {
-    width: 90%;
+    width: 98%;
+}
+
+#about-details .award {
+    width: 50%;
+}
+
+.award-desc, #about-details p {
+    vertical-align: top;
+    text-align: left;
 }
 
 #about-details h2 {
-    margin-top: 10px;
+    margin: 10px 0 10px 5px;
 }
 
 .article-icon a:hover {
@@ -492,6 +505,12 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* about */
+.about-desc p {
+    margin: 5px;
+    text-align: left;
 }
 
 
@@ -680,6 +699,18 @@ footer a:hover, footer a:active {
     .article-icon figcaption {
         font-size: 1rem;
     }
+
+    #about-details h2 {
+        margin: 0 0 10px 5px;
+    }
+
+    #about-details .award {
+        width: 33%;
+    }
+
+    .award-desc, #about-details p {
+        width: 64%;
+    }
 }
 
 /* Above 768px wide: 
@@ -708,6 +739,14 @@ footer a:hover, footer a:active {
 
     .article-icon img {
         width: 75%;
+    }
+
+    #about-details .award {
+        width: 25%;
+    }
+
+    .award-desc, #about-details p {
+        width: 70%;
     }
 }
 
