@@ -12,7 +12,7 @@ function pageDocReady () {
 // When clicked, updates the displayed name and associated google map.
 function setupLocationClick () {
   // position the figcaption out of view
-  var locationItems = $('.location a');
+  var locationItems = $('.article-icon a');
 
   for (i=0; i<locationItems.length; i++) {
     $(locationItems[i]).click(function (item) {
