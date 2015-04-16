@@ -50,7 +50,7 @@
     background-color: #eee;
 }
 
-.dark-red {
+.headline {
     color: #8E0A0A;
 }
 
@@ -456,6 +456,12 @@ main {
     width: 50%;
 }
 
+#about-name {
+    margin: 10px 0 10px 5px;
+    font-weight: bold;
+    color: #32402D;
+}
+
 #about-details {
     width: 95%;
     text-align: center;
@@ -472,10 +478,6 @@ main {
 .award-desc, #about-details p {
     vertical-align: top;
     text-align: left;
-}
-
-#about-details h2 {
-    margin: 10px 0 10px 5px;
 }
 
 .article-icon a:hover {
@@ -513,6 +515,94 @@ main {
     text-align: left;
 }
 
+.about-desc h2, .about-desc h4 {
+    text-align: left;
+    margin: 20px 5px 5px 5px;
+}
+
+/* contact */
+
+#contact-fig {
+    text-align: center;
+}
+
+#contact-fig img {
+    display: inline-block;
+    width: 90%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-border-radius: 5px;
+}
+
+.contact-form {
+    margin: 10px auto;
+    background: #f8f8f8;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+::-webkit-input-placeholder { color:#999; }
+::-moz-placeholder { color:#999; } /* firefox 19+ */
+:-ms-input-placeholder { color:#999; } /* ie */
+input:-moz-placeholder { color:#999; }
+
+.field {
+    color: #555;
+    height: 30px;
+    line-height:15px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font: normal 14px/14px Arial, Helvetica, sans-serif;                     
+}
+
+.contact-form textarea {
+    height:100px;
+    padding-top: 10px;
+}
+
+.button-group input {
+    display: inline;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #C73924;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+}
+
+.button-group input:hover {
+    background-color:#32402D;
+}
+
+.thankyou-msg {
+    margin: 10px;
+    background: #f8f8f8;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
 
 /**========================================================
     6 - BUTTON
@@ -700,12 +790,12 @@ footer a:hover, footer a:active {
         font-size: 1rem;
     }
 
-    #about-details h2 {
-        margin: 0 0 10px 5px;
-    }
-
     #about-details .award {
         width: 33%;
+    }
+
+    .about-desc h2 {
+        margin: 0 5px 5px 5px;
     }
 
     .award-desc, #about-details p {
@@ -747,6 +837,27 @@ footer a:hover, footer a:active {
 
     .award-desc, #about-details p {
         width: 70%;
+    }
+
+    #contact-fig {
+        display: inline-block;
+        text-align: left;
+        width: 50%;
+    }
+
+    #contact-fig img {
+        width: 100%;
+    }
+
+    #contact-msg {
+        display: inline-block;
+        vertical-align: top;
+        width: 45%;
+        margin-top: 0;
+    }
+
+    .contact-form {
+        margin: 0 auto;
     }
 }
 

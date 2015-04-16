@@ -6,7 +6,7 @@
     <meta name="keywords" content="responsive html5 restaurant website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Ellen Dash">
-    <title>Pizza Planet Contact</title>
+    <title>Pizza Planet Thankyou</title>
 
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Comfortaa">
@@ -43,39 +43,16 @@
     <main id="content" class="clearfix content-bg">
         <article id="article-top">
             <header>
-                <h1>Contact</h1>
+                <h1>Thankyou</h1>
             </header>
             <figure id="contact-fig">
                 <img src="img/pizza-heart2.jpg" alt="heart shaped pizza">
             </figure>
 
-            <section id="contact-msg">
-                <form autocomplete="on" name="contact-info" action="/gdform.php" method="post" class="contact-form">
-                    <h2 class="highlight">We'd love to hear from you</h2>
-                    <input type="hidden" name="redirect" value="TBD/thankyou.html" />
-
-                    <label for="name">Name *</label>
-                    <input required id="name" type="text" name="name" placeholder="First Last" class="field" />
-
-                    <label for="email">Email *</label>
-                    <input required id="email" type="email" name="email" placeholder="user@someplace.com" class="field" />
-
-                    <label for="topic">Topic</label>
-                    <select id="topic" name="topic" class="field">
-                        <option value="" selected label="--Select Topic--"></option>
-                        <option value="compliment" label="Compliment">Compliment or concerns</option>
-                        <option value="question" label="Question">General questions</option>
-                        <option value="suggestion" label="Suggestion">Suggestion</option>
-                    </select>
-
-                    <label for="comment">Comment</label>
-                    <textarea wrap="hard" id="comment" name="comment" class="field"></textarea>
-
-                    <div class="button-group">
-                        <input type="submit" value="Send" name="submit" />
-                        <input type="reset" value="Reset" name="reset" />
-                    </div>
-                </form>
+            <section id="contact-msg" class="thankyou-msg">
+                <h2 class="highlight">Thank you!</h2>
+                <p>Thank you for the message</p>
+                <p>We appreciate your comments</p>
             </section>
 
         </article>
@@ -107,8 +84,6 @@
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.3.min.js"><\/script>')</script> -->
 
-    <!-- page specific JavaScript -->
-    <script src="js/contact.js"></script>
     <!-- site common JavaScript -->
     <script src="js/main.js"></script>
 </body>
