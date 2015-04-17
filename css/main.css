@@ -86,7 +86,7 @@ h4 {
 
 article, aside {
     vertical-align: top;
-    margin: 10px;
+    margin:10px 0;
 }
 
 section {
@@ -139,6 +139,11 @@ section {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    margin: 0 10px;
+}
+
+label {
+    text-align: left;
 }
 
 /**========================================================
@@ -157,6 +162,7 @@ h1 {
     font-size: 24px;
     color: #222222;
     margin: 10px 0;
+    padding-top: 10px;
 }
 
 h2 {
@@ -287,6 +293,7 @@ main {
     width: 95%; 
     max-width: 1200px;
     margin: auto;
+    text-align: center;
 }
 
 .panel {
@@ -383,6 +390,7 @@ main {
 .menu-category, .article-icon {
     display: inline-block;
     margin-right: 10px;
+    margin-bottom: 15px;
 }
 
 /* menu */
@@ -402,12 +410,10 @@ main {
 
 .menu-category figcaption {
     margin:0; 
-    padding:10px 0px;
-    background:rgba(0,0,0,.45); 
-    color: white;
-    position: relative;
+    padding:0;
+    margin-bottom: 10px;
+    color: #8E0A0A;
     font-weight: normal;
-    top: -120px;
 }
 
 .menu-popup {
@@ -417,10 +423,6 @@ main {
     width: auto;
     max-width: 700px;
     margin: 20px auto;
-}
-
-.hide-caption {
-    left: -2000px;
 }
 
 .menu-items-wrapper .description {
@@ -463,8 +465,13 @@ main {
 }
 
 #about-details {
-    width: 95%;
+    width: 100%;
     text-align: center;
+}
+
+#article-top, #about-details {
+    display: block;
+    float: none;
 }
 
 #about-details img {
@@ -876,6 +883,10 @@ footer a:hover, footer a:active {
     aside {
         float: right;
         width: 47%;
+    }
+
+    #specials {
+        margin-left: 10px;
     }
 
     #text-examples {
