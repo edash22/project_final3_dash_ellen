@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="responsive restaurant website">
+    <meta name="keywords" content="responsive html5 restaurant website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ellen Dash">
+    <title>Pizza Planet Order Online</title>
+
+    <link rel="stylesheet" href="css/vendor/normalize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <header id="header" class="container">
+        <div id="logo">
+            <a href="index.html"><img src="img/PizzaPlanetLogo.png" alt="Pizza Planet"></a>
+        </div>
+        <nav id="navigation">
+            <h1 class="hide">Order Online</h1>
+            <ul class="nav-menu">
+                <li title="menu" id="nav-menu">
+                    <a href="menu.html" class="main-nav btn">menu</a>            
+                </li>
+                <li title="where" id="nav-where">
+                    <a href="where.html" class="main-nav btn">where</a>            
+                </li>
+                <li title="about" id="nav-about">
+                    <a href="about.html" class="main-nav btn">about</a>            
+                </li>
+                <li title="contact" id="nav-contact">
+                    <a href="contact.html" class="main-nav btn">contact</a>            
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content" class="clearfix content-bg">
+        <article id="article-top">
+            <header>
+                <h1>order</h1>
+            </header>
+            <figure id="contact-fig">
+                <img src="img/pizzaDelivery.jpg" alt="pizza placed into box">
+            </figure>
+
+            <section id="contact-msg">
+                <form autocomplete="on" name="contact-info" action="#" method="post" class="contact-form">
+                    <h2 class="highlight">Online Order Form</h2>
+                    <input type="hidden" name="redirect" value="mmc6278/p3/thankyou.html" />
+
+                    <label for="name">Name *</label>
+                    <input required id="name" type="text" name="name" placeholder="First Last" class="field" />
+
+                    <label for="name">Phone</label>
+                    <input id="tel" type="tel" name="tel" placeholder="nnn-nnn-nnnn" class="field" />
+
+                    <label for="topic">Item</label>
+                    <select id="items" name="items" class="field">
+                        <optgroup label="Starters">
+                            <option value="Garlic Knots 5.00" label="Garlic Knots">Garlic Knots</option>
+                            <option value="Bruschetta 5.00" label="Bruschetta">Bruschetta</option>
+                            <option value="Spinach Dip 6.00" label="Spinach Dip">Spinach Dip</option>
+                            <option value="Meatball Trio 6.00" label="Meatball Trio">Meatball Trio</option>
+                            <option value="The Capri 6.00" label="The Capri">The Capri</option>
+                            <option value="Mozzarella Marinara 5.00" label="Mozzarella Marinara">Mozzarella Marinara</option>
+                        </optgroup>
+                        <optgroup label="Greens">
+                            <option value="Caesar 8.00" label="Caesar">Caesar</option>
+                            <option value="Spring 8.00" label="Spring">Spring</option>
+                            <option value="Garden 6.00" label="Garden">Garden</option>
+                            <option value="Spinach 8.00" label="Spinach">Spinach</option>
+                        </optgroup>
+                        <optgroup label="Pizzas">
+                            <option value="Green Planet Small 11.00" label="Green Planet Small">Green Planet Small</option>
+                            <option value="Green Planet Medium 15.00" label="Green Planet Medium">Green Planet Medium</option>
+                            <option value="Green Planet Large 19.00" label="Green Planet Large">Green Planet Large</option>
+                            <option value="Mystery World Small 11.00" label="Mystery World Small">Mystery World Small</option>
+                            <option value="Mystery World Medium 15.00" label="Mystery World Medium">Mystery World Medium</option>
+                            <option value="Mystery World Large 19.00" label="Mystery World Large">Mystery World Large</option>
+                            <option value="Flying Planet Small 11.00" label="Flying Planet">Flying Planet Small</option>
+                            <option value="Flying Planet Medium 15.00" label="Flying Planet Medium">Flying Planet Medium</option>
+                            <option value="Flying Planet Large 19.00" label="Flying Planet Large">Flying Planet Large</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="name">How many? *</label>
+                    <input required id="quantity" type="number" name="quantity" class="field" />
+
+                    <div class="button-group">
+                        <input type="submit" value="Submit" name="submit" />
+                        <input type="reset" value="Reset" name="reset" />
+                    </div>
+                </form>
+            </section>
+
+        </article>
+        
+    </main>
+
+    <footer class="clearfix">
+        <div class="footer-motto">
+            <p>Grab a taste of the universe! &trade;</p>
+        </div>
+        <div class="footer-bg">
+            <h1 id="footer-logo">Pizza Planet</h1>
+            <p id="footer-social">
+                <a href="#"><span class="fa fa-2x fa-facebook-square wide24"></span></a>
+                <a href="#"><span class="fa fa-2x fa-twitter-square wide24"></span></a>
+                <a href="#"><span class="fa fa-2x fa-pinterest-square wide24"></span></a>
+                <a href="#"><span class="fa fa-2x fa-google-plus-square wide24"></span></a>
+            </p>
+        </div>
+    </footer>
+
+    
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- Use this line for faster local development (without local web server) -->
+    <script src="js/vendor/jquery-2.1.3.min.js"></script>
+
+    <!-- Use these two lines when deploying -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.3.min.js"><\/script>')</script> -->
+
+    <!-- page specific JavaScript -->
+    <script src="js/order.js"></script>
+    <!-- site common JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
