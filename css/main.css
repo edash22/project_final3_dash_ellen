@@ -6,7 +6,7 @@
     Browsers supported: IE8+, Chrome35+, Firefox34+
 
     Known limitations:
-    - none (yet)
+    - minimum width is 300px
 
 ******************** TODO  - CLEAN AND FIX **********************
 
@@ -15,10 +15,12 @@
         2 - GENERAL 
         3 - TYPE
         4 - HEADER
-        5 - CONTENT
-        6 - BUTTON
-        7 - FOOTER
-        8 - MEDIA QUERIES
+        5 - NAVIGATION
+        6 - CONTENT
+        7 - BUTTON
+        8 - FOOTER
+        9 - SLIDER
+        10 - MEDIA QUERIES
 
 ========================================================**/
 
@@ -26,36 +28,24 @@
     1 - COLORS 
 ========================================================**/
 
-.dark-red-bg, .button-bg {
+.button-bg {
     background-color: #8E0A0A;
 }
 
-.orangey-bg, .button-border-bg {
+.button-border-bg {
     background-color: #C73924;
 }
 
-.yellowish-bg, .content-bg {
+.content-bg {
     background-color: #E08745;
 }
 
-.dk-green-bg, .footer-bg {
+.footer-bg {
     background-color: #32402D;
-}
-
-.greyish-bg {
-    background-color: #4F423B;
-}
-
-.almost-white-bg {
-    background-color: #eee;
 }
 
 .headline {
     color: #8E0A0A;
-}
-
-.dk-green {
-    color: #32402D;
 }
 
 /**========================================================
@@ -114,24 +104,8 @@ section {
     display: inline-block;
 }
 
-.inline-only {
-    display: inline;
-}
-
 .hide {
     display: none;
-}
-
-.extra-margin-bottom {
-    margin-bottom: 1rem;
-}
-
-.extra-margin-left {
-    margin-left: 1rem;
-}
-
-.thin-border {
-    border: 1px solid #222;
 }
 
 .theme-border {
@@ -190,11 +164,6 @@ a:hover, a:active {
     color: #32402D;
 }
 
-.caption {
-    font-size: .8rem;
-    text-align: center;
-}
-
 .bold {
     font-weight: bold;
 }
@@ -223,7 +192,7 @@ a:hover, a:active {
 }
 
 /**========================================================
-    4 - NAVIGATION 
+    5 - NAVIGATION 
 ========================================================**/
 
 nav {
@@ -259,16 +228,7 @@ nav a {
     text-decoration: none;
     display: inline-block;
     vertical-align: middle;
-    /* margin-top: 68px;
-    padding-top: 50px; 
-    padding-bottom: 45px; */
 }
-
-.main-nav {
-    /* width: 165px; */
-    /* background: url('../img/flyingSaucerButtonGreen.png') no-repeat; */
-}
-
 
 #nav-home a {
     margin-top: 0;
@@ -281,7 +241,7 @@ nav li a span:hover {
 }
 
 /**========================================================
-    5 - CONTENT
+    6 - CONTENT
 ========================================================**/
 
 /* Main - HTML5 fix for IE8 */
@@ -294,44 +254,6 @@ main {
     max-width: 1200px;
     margin: auto;
     text-align: center;
-}
-
-.panel {
-    padding: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    border: solid #8E0A0A 4px;
-}
-
-.panel-no-padding {
-    padding: 0;
-    margin: 0 20px;
-    /* border: 1rem solid #E08745;  */
-}
-
-.swatch, .iswatch {
-    display: inline-block;
-    margin-right: .75rem;
-    margin-bottom: .75rem;
-    border: 1px solid #222;
-    color: black;
-    text-align: center;
-}
-
-.swatch {
-    width: 4.5rem;
-    height: 4.5rem;
-}
-
-.iswatch {
-    width: 4.5rem;
-    height: 4.5rem;
-}
-
-.iswatch img {
-    width: 4.5rem;
-    height: 4.5rem;
 }
 
 /* promotions */
@@ -393,11 +315,11 @@ main {
     margin-bottom: 15px;
 }
 
-/* menu */
-
 .article-icon a {
     outline: none;
 }
+
+/* menu */
 
 .menu-popup {
     position: relative;
@@ -609,7 +531,7 @@ input:-moz-placeholder { color:#999; }
 }
 
 /**========================================================
-    6 - BUTTON
+    7 - BUTTON
 ========================================================**/
 
 /* generated with http://css3buttongenerator.com */
@@ -628,17 +550,13 @@ input:-moz-placeholder { color:#999; }
     margin-right: 1rem;
 }
 
-.btn-green {
-    background: #32402D;
-}
-
 .btn:hover, .btn:active {
     background: #32402d;
     text-decoration: none;
 }
 
 /**========================================================
-    7 - FOOTER
+    8 - FOOTER
 ========================================================**/
 
 footer {
@@ -685,7 +603,7 @@ footer a:hover, footer a:active {
 }
 
 /**========================================================
-    ?? - SLIDER
+    9 - SLIDER
 ========================================================**/
   
 .slider-wrapper{
@@ -768,7 +686,7 @@ footer a:hover, footer a:active {
 
 
 /**========================================================
-    8 - MEDIA QUERIES
+    10 - MEDIA QUERIES
 ========================================================**/
 
 /* Above 400px wide: 
@@ -883,16 +801,6 @@ footer a:hover, footer a:active {
         margin-left: 10px;
     }
 
-    #text-examples {
-        float: right;
-        width: 61%;
-    }
-
-    #graphic-examples {
-        float: left;
-        width: 33%;
-    }
-
     .btn {
         font-size: 1.15rem;
     }
@@ -985,26 +893,6 @@ footer a:hover, footer a:active {
    (4) bigger navigation buttons
 */
 @media (min-width: 1100px) {
-    #text-examples {
-        float: right;
-        width: 48%;
-    }
-
-    #graphic-examples {
-        float: left;
-        width: 48%;
-    }
-
-    .iswatch {
-        width: 8rem;
-        height: 8rem;
-    }
-
-    .iswatch img {
-        width: 8rem;
-        height: 8rem;
-    }
-
     body {
         font-size: 1em;
     }
